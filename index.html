@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cédric DEGRELLE">
+    <meta name="description" content="Jeu du Bejeweled dans le cadre d'un projet à l'IUT Informatique de Belfort-Montbéliard">
+    <meta name="copyright" content="© cedric.degrelle-dev@hotmail.com">
+
+    <title>Projet Bejeweled</title>
+
+    <link rel="stylesheet" type="text/css" href="app/styles/style.css"/>
+
+    <script type="text/javascript" src="app/scripts/jquery.js"></script>
+</head>
+<body>
+
+<div class="canvas">
+    <canvas id="bejeweled" width="1200" height="800" draggable="false">
+        Votre navigateur ne supporte pas HTML5, veuillez le mettre à jour pour jouer.
+    </canvas>
+</div>
+
+<progress id="progress" value="50" max="100"></progress>
+
+<audio id="level-up" preload="none">
+    <source src="app/sounds/levelup.mp3" type="audio/mp3">
+</audio>
+<audio id="tries-down" preload="none">
+    <source src="app/sounds/tries.mp3" type="audio/mp3">
+</audio>
+<audio id="destroyGems" preload="none">
+    <source src="app/sounds/destroy.mp3" type="audio/mp3">
+</audio>
+<audio id="destroyGems4" preload="none">
+    <source src="app/sounds/destroy4.mp3" type="audio/mp3">
+</audio>
+<audio id="pressButton" preload="none">
+    <source src="app/sounds/pressButton2.mp3" type="audio/mp3">
+</audio>
+<audio id="over" preload="none">
+    <source src="app/sounds/over.mp3" type="audio/mp3">
+</audio>
+
+<script type="text/javascript" src="app/scripts/main.js"></script>
+
+</body>
+</html>

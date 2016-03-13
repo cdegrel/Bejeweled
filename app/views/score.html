@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cédric DEGRELLE">
+    <meta name="description" content="Jeu du Bejeweled dans le cadre d'un projet à l'IUT Informatique de Belfort-Montbéliard">
+
+    <title>Top Scores</title>
+
+    <link rel="stylesheet" type="text/css" href="../styles/style.css"/>
+    <script type="text/javascript" src="../scripts/jquery.js"></script>
+</head>
+<body>
+
+<table>
+    <thead>
+    <tr>
+        <th>Rank</th>
+        <th>Pseudo</th>
+        <th>Score</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $.post("../score.php", {action:"getAllScores"},
+            function(data){
+                $(data).find('player').each(function(){
+                    $('tbody').append('<tr>').children('tr:last')
+                            .append('<td>'+$(this).find('rank').text()+'</td>')
+                            .append('<td>'+$(this).find('pseudo').text()+'</td>')
+                            .append('<td>'+$(this).find('score').text()+'</td>');
+                });
+            },
+            'xml'
+        )
+    });
+</script>
+
+</body>
+</html>

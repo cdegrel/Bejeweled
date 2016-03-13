@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: linear-gradient( 0deg , #4ac1ff, #795bb0 );
+    background-size: cover;
+}
+div.canvas{
+    margin: auto;
+    height: 98.3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+canvas#bejeweled{
+    background: url(../images/canvas.png) center no-repeat;
+    border-radius: 5px;
+    border: 5px solid #ffe4b5;
+    cursor: pointer;
+}
+
+progress {
+    width: 100%;
+    height: 1em;
+    display: block;
+    -webkit-appearance: none;
+}
+
+progress[value]::-webkit-progress-value {
+    background-image:
+            -webkit-linear-gradient(45deg,
+            transparent 33%, rgba(0, 0, 0, .1) 33%,
+            rgba(0,0, 0, .1) 66%, transparent 66%),
+            -webkit-linear-gradient(top,
+            rgba(255, 255, 255, .25),
+            rgba(0, 0, 0, .25)),
+            -webkit-linear-gradient(left, #cca635, #f44);
+
+    border-radius: 2px;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+table{
+    width: 480px;
+    height: 200px;
+    border-collapse: collapse;
+    border: 4px solid #ffe4b5;
+    text-align: center;
+}
+th {
+    font-weight: 800;
+    font-size: 1.2em;
+    color: #ffe4b5;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border: 2px solid #ffe4b5;
+    background-color: #795bb0;
+    padding: 20px;
+}
+td{
+    color: #ffe4b5;
+    font-size: 18px;
+    border-right: 2px dashed #ffe4b5;
+    padding: 10px 20px;
+    vertical-align: top;
+}
+
