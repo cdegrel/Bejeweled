@@ -54,7 +54,7 @@ th {
     font-size: 1.2em;
     color: #ffe4b5;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 4.5px;
     border: 2px solid #ffe4b5;
     background-color: #795bb0;
     padding: 20px;
@@ -65,5 +65,6 @@ td{
     border-right: 2px dashed #ffe4b5;
     padding: 10px 20px;
     vertical-align: top;
+    font-weight: 800;
 }
 

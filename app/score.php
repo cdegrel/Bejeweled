@@ -7,6 +7,7 @@ if(isset($_POST['action'])){
 	$base = new Connexion();
 	$co = $base->connect();
 
+	
 	extract($_POST);
 
 	switch ($action) {

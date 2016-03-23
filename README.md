@@ -19,7 +19,7 @@
 <li>Autres statistiques</li>
 
 ---
-###Version actuelle : v1.03.13
+###Version actuelle : v1.03.2
 ###Navigateur supporté :
 Chrome v4.0+, Firefox v2.0+, Internet Explorer v9.0+, Edge, Opera v9.0+, Safari v3.1+
 
